@@ -10,11 +10,12 @@ public class MoodAnalyAser {
 /* @Description - in this we can throw the exception and catch the exception */
     public String analysisMood() {
         try {
-            if (message.contains("Sad")) ;
+            if (message.contains("Sad"))
             return "sad";
+            else
+                return "happy";
         } catch (Exception e) {
-            System.out.println(e);
-            return "sad";
+            return "happy";
 
         }
     }
