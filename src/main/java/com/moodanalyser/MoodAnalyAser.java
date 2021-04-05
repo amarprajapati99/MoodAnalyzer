@@ -1,10 +1,22 @@
 package com.moodanalyser;
-
+/* @Description- Mood analysis test in this we check mood is happy or sad */
 public class MoodAnalyAser {
-    public String analyaseMood(String message) {
-        if(message.contains("happy"))
-        return "happy";
-        else
-            return "sad";
+    private String message;
+
+    public String MoodAnalyAser(String message) {
+        this.message = message;
+        return  analysisMood();
     }
+/* @Description - in this we can throw the exception and catch the exception */
+    public String analysisMood() {
+        try {
+            if (message.contains("Sad")) ;
+            return "sad";
+        } catch (Exception e) {
+            System.out.println(e);
+            return "sad";
+
+        }
+    }
+
 }
